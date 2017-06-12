@@ -6,6 +6,7 @@ param(
 [array]$rgexcludelist=@()
 
 )
+Login-AzureRmAccount #Remove if using in Azure powershell task in Team services
 if($rgexcludelist.Count -ne 0)
 {
 $rgs=$rgs|?{$rgexcludelist -notcontains $_}
