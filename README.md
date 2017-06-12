@@ -1,7 +1,7 @@
 # Azure-cmdlets-in-parallel
 Sample code to illustrate use of Azure powershell cmdlets in paralllel
 
-It's difficult to run powershell cmdlets in parallel using the usual start-job cmdlet at it runs under a different session and unable to run under the same context as the script.
+It's difficult to run azure powershell cmdlets in parallel using the usual start-job cmdlet at it runs under a different session and unable to run under the same context of Login-AzureRmAccount in the script.
 
 This example illustrates runing the code in paralel using multithreading by utilizing powershell runspace functionality
 
